@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class Bucles{
+    // Definimos los colores como constantes para que el código sea legible
+    public static final String RESET = "\u001B[0m";
+    public static final String VERDE = "\u001B[32m";
+    public static final String CIAN = "\u001B[36m";
+    public static final String ROJO = "\u001B[31m";
+    public static final String AMARILLO = "\u001B[33m";
+
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        int opcion;
+        
+        do {
+            System.out.println("\n" + VERDE + "--- GESTOR DE MEDIDOR ---" + RESET);
+            System.out.println("1. Ingresar lectura");
+            System.out.println("0. Salir");
+            System.out.print("Elija una opción: ");
+            
+            opcion = entrada.nextInt();
+            
+            // Usamos switch para decidir qué imprimir según la opción
+            switch (opcion) {
+                case 1:
+                    System.out.println(AMARILLO + "\n[SISTEMA]: Preparando sensor..." + RESET);
+                    System.out.print("Ingrese el valor de la lectura: ");
+                    double lectura = entrada.nextDouble();
+                    System.out.println(VERDE + "✔ Lectura de " + lectura + " guardada exitosamente." + RESET);
+                    break;
+                    
+                case 0:
+                    System.out.println(ROJO + "Cerrando sesión y saliendo..." + RESET);
+                    break;
+                    
+                default:
+                    System.out.println(ROJO + "⚠ Opción no válida. Intente de nuevo." + RESET);
+                    break;
+            }
+            
+        } while (opcion != 0); 
+        
+        System.out.println("Programa terminado.");
+        entrada.close(); // Buena práctica cerrar el Scanner
+    }
+}

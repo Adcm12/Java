@@ -24,8 +24,7 @@ public class Condicionales {
 		} else {
 			
 			System.out.println("Consumo excelente, modo ahorro.");
-		}
-		
+		}		
 		
 		// Forma rapida de una sola linea para una condicion unica
 		
