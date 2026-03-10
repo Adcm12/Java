@@ -1,0 +1,17 @@
+
+public class uso_Math {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        
+		int raiz = (int) Math.sqrt(81);
+			
+		System.out.println("El resultado de la raiz es: " + raiz);
+		
+		int potencia = (int) Math.pow(5, 6); // El (int) convierte un double en int
+		
+		System.out.println("El resultado de la potencia es: " + potencia);
+				
+	}
+
+}

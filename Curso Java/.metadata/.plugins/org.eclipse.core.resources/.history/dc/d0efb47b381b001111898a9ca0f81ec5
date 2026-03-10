@@ -1,0 +1,26 @@
+import java.math.BigInteger; // BigInteger ayuda a mostrar un numero mas grande que int y long no alcanzan a mostrar
+
+public class uso_Math {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        
+		int raiz = (int) Math.sqrt(81);
+			
+		System.out.println("El resultado de la raiz es: " + raiz);
+		
+		int potencia1 = (int) Math.pow(5, 6); // El (int) convierte un double en int
+		
+		System.out.println("El resultado de la potencia es: " + potencia1);
+		
+		BigInteger base = BigInteger.valueOf(3);
+		
+		int exponente= 3;
+		
+		BigInteger potencia = base.pow(exponente);
+		
+		System.out.println(potencia);
+				
+	}
+
+}

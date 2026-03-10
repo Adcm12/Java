@@ -1,0 +1,17 @@
+
+public class Uso_variables {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int edad = 17;
+		
+		System.out.println(edad + 16); // Llamando la variable edad
+		
+
+	}
+
+}

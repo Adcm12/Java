@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Entrada_de_dados_II {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner entrada = new Scanner(System.in); // Se crea el objeto scanner
+		
+		System.out.print("Introduce la lectura del medidor de hoy (Kwh): ");
+		double lectura_actual = entrada.nextDouble(); // Lo leemos como un decimal
+		
+		System.out.println("Lectura registrada exitosamente: " + lectura_actual + " Kwh");
+		
+		entrada.close(); //  Buena practica: cerrar el scanner
+	}
+
+}
