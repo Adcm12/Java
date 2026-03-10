@@ -12,6 +12,8 @@ public class Entrada_de_datos {
 		
 		System.out.println("Hola " + nombre_usuario);
 		
+		entrada.close();
+		
 
 	}
 
