@@ -1,0 +1,29 @@
+
+public class arrays_y_bucle_for_e_for_each {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// Declaramos el array para guardar los valores
+		
+		double[] lecturasDiciembre = {120.5, 122.0, 125.3, 128.1, 130};
+		
+		// Bucle for tradicional
+		
+		System.out.println("Usando el bucle for tradicional... ");
+		
+		for (int i = 0; i < lecturasDiciembre.length; i++) {
+			System.out.println("Día " + (i+1) + ": " + lecturasDiciembre[i] + " Kwh");
+		}
+		
+		
+		// Bucle For-Each (mas limpio y moderno)
+		
+		System.out.println("\nUsando For-Each");
+		
+		for (double lectura : lecturasDiciembre) {
+			System.out.println("Lectura guardada: " + lectura + " Kwh")
+		}
+	}
+
+}

@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class Condicionales {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//double consumo_mensual = 280.5;
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println ("Cual fue tu consumo mensual: ");
+		double consumo_mensual = entrada.nextDouble();
+		
+		// estructura clasica
+		
+		if (consumo_mensual > 250) {
+			
+			System.out.println("Alerta! EL consumo es elavado. Revise todos sus equipos");
+			
+		} else if (consumo_mensual > 150) { 
+			
+			System.out.println("Consumo excelente, modo ahorro");
+			
+		} else {
+			
+			System.out.println("Consumo excelente, modo ahorro.");
+		}
+		
+		
+		// Forma rapida de una sola linea para una condicion unica
+		
+		String estado_factura = (consumo_mensual > 250 ) ? "Factura cara" : "Factura estable";
+		System.out.println("Estado de este mes: " + estado_factura);
+		
+
+	}
+
+}
